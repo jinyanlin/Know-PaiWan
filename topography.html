@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Know PaiWan | Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+            #maps {
+                height: 800px;
+                width: 100%;
+            }
+        </style>
+    
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+    />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="history">
+
+    
+    <!-- menu -->
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md ">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Know PaiWan | 認識排灣族</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">傳統文化</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">活動日曆表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">地圖</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+  <div style="padding-top: 250px; padding-block-end: 100px" class="container-fluid">
+    <h1>Where We Live</h1> 
+    <div class="row">
+        <div class="container-fluid">
+            <div class="row-3">
+                <img src="assets/img/places/manzhou-township.jpg" width="400px;" height="250px">
+                <img src="assets/img/places/church.jpg" width="400px;" height="250px">
+                <img src="assets/img/places/town.jpg" width="400px;" height="250px">
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="row">
+            <div id="maps"></div>
+      </div>
+  </div>
+    
+
+    <script>
+        function initMap() {
+            var manzhou = { lat: 22.043103, lng: 120.838888 };
+            var map = new google.maps.Map(document.getElementById('maps'), {
+                zoom: 16,
+                center: manzhou,
+                mapTypeId: 'satellite',
+            });
+            var marker = new google.maps.Marker({
+                position: manzhou,
+                map: map
+            });
+
+        }
+
+
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVzeYipfPzJuiHOUEu1CNUy9cYuaLBHaY&callback=initMap">
+    </script>
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
