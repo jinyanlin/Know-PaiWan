@@ -29,7 +29,8 @@ jQuery(document).ready(function() {
     /*
         Background slideshow
     */
-    $('.top-content').backstretch("assets/img/backgrounds/taiwansky.jpg");
+	$('.top-content').backstretch("assets/img/backgrounds/taiwansky.jpg");
+	/*$('.top-content-culture').backstretch("assets/img/backgrounds/culture_header.jpg");*/
 	$('.activities').backstretch("assets/img/backgrounds/paiwanactivity.jpg");
 	$('.history').backstretch("assets/img/backgrounds/100_0096.jpg");
    
