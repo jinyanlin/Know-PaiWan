@@ -11,6 +11,25 @@ body {
 strong { font-weight: 600; }
 
 
+#paiwantext{
+	font-family: 'Charmonman', cursive;
+	background: url('https://i.ibb.co/89Cf3dm/text-bg.png') no-repeat;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	animation: moveBackground 90s linear infinite;
+}
+
+
+/*move background*/
+@keyframes moveBackground{
+	0%{
+		background-position: 0% 30%;
+	}
+	100%{
+		background-position: 100% 50%;
+	}
+}
 
 h1, h2 {
 	margin-top: 10px;
