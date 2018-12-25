@@ -32,7 +32,7 @@ jQuery(document).ready(function() {
 	$('.top-content').backstretch("assets/img/backgrounds/taiwansky.jpg");
 	/*$('.top-content-culture').backstretch("assets/img/backgrounds/culture_header.jpg");*/
 	$('.activities').backstretch("assets/img/backgrounds/paiwanactivity.jpg");
-	$('.history').backstretch("assets/img/backgrounds/100_0096.jpg");
+	$('.history').backstretch("assets/img/backgrounds/fern.jpg");
 	$('.history_His').backstretch("assets/img/backgrounds/HisBg.jpg");
    
     $('#top-navbar-1').on('shown.bs.collapse', function(){
