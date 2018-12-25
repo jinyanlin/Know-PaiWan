@@ -58,5 +58,7 @@ function openLocation(){
 	location.href="topography.html";
 }
 
-
+function openHistory(){
+	location.href="History.html";
+}
 
