@@ -56,16 +56,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link " href="index.html">首頁</a>
+              <a class="nav-link" href="index.html">首頁</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">傳統文化</a>
+              <a class="nav-link" href="traditional.html">文化介紹</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">活動日曆表</a>
+              <a class="nav-link" href="History.html">歷史介紹</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">地圖</a>
+              <a class="nav-link" href="#">活動行程表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="topography.html">地圖</a>
             </li>
           </ul>
         </div>
@@ -75,11 +78,14 @@
 
 
   <div style="padding-top: 250px; padding-block-end: 100px" class="container-fluid">
+    <div class="container" style="background-color: #333">
     <h1>Where We Live</h1> 
+    <h2>Click on an image to see where it is!</h2>
+  </div>
     <div class="row">
         <div class="container-fluid">
             <div class="row-3">
-                <img src="assets/img/places/manzhou-township.jpg" width="400px;" height="250px">
+                <img  id="man" src="assets/img/places/manzhou-township.jpg" width="400px;" height="250px">
                 <img src="assets/img/places/church.jpg" width="400px;" height="250px">
                 <img src="assets/img/places/town.jpg" width="400px;" height="250px">
             </div>
@@ -107,6 +113,9 @@
                 map: map
             });
 
+            google.maps.event.addDomListener(document.getElementById('man'), 'click', function(){
+              map.setCenter(new google.maps.LatLng(22.0439, 120.8384));
+            });
         }
 
 
