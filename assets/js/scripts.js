@@ -33,6 +33,7 @@ jQuery(document).ready(function() {
 	/*$('.top-content-culture').backstretch("assets/img/backgrounds/culture_header.jpg");*/
 	$('.activities').backstretch("assets/img/backgrounds/paiwanactivity.jpg");
 	$('.history').backstretch("assets/img/backgrounds/fern.jpg");
+	$('.activities').backstretch("assets/img/backgrounds/14324331866125.jpg");
 	$('.history_His').backstretch("assets/img/backgrounds/HisBg.jpg");
    
     $('#top-navbar-1').on('shown.bs.collapse', function(){
@@ -62,3 +63,6 @@ function openHistory(){
 	location.href="History.html";
 }
 
+function openActivities(){
+	location.href="activities.html";
+}
